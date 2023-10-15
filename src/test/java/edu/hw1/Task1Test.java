@@ -10,7 +10,7 @@ public class Task1Test {
     void Test0() {
         String timeinmins = "00:00";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(0);
@@ -20,7 +20,7 @@ public class Task1Test {
     void Test_1() {
         String timeinmins = "00:01";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(1);
@@ -30,7 +30,7 @@ public class Task1Test {
     void Test_10() {
         String timeinmins = "00:10";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(10);
@@ -40,7 +40,7 @@ public class Task1Test {
     void Test_11() {
         String timeinmins = "00:11";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(11);
@@ -50,7 +50,7 @@ public class Task1Test {
     void Test_1_00() {
         String timeinmins = "01:00";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(60);
@@ -60,7 +60,7 @@ public class Task1Test {
     void Test_100_59() {
         String timeinmins = "100:59";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(6059);
@@ -70,7 +70,7 @@ public class Task1Test {
     void Test_wrongsecs() {
         String timeinmins = "00:66";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(-1);
@@ -80,7 +80,7 @@ public class Task1Test {
     void Test_wrongsplit() {
         String timeinmins = "0:066";
 
-        int timeinsecs = Task1.mins_to_secs(timeinmins);
+        int timeinsecs = Task1.minstosecs(timeinmins);
 
         assertThat(timeinsecs)
             .isEqualTo(-1);

@@ -8,7 +8,7 @@ public class Task1 {
     private Task1() {
     }
 
-    public static int mins_to_secs(@NotNull String timeinmins) {
+    public static int minstosecs(@NotNull String timeinmins) {
         if (timeinmins.matches("[0-9]+:[0-5][0-9]")) {
             String[] timearray = timeinmins.split(":");
             try {
