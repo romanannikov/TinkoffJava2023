@@ -13,8 +13,7 @@ public class Task1 {
             String[] timearray = timeinmins.split(":");
             try {
                 return Integer.parseInt(timearray[0]) * SECS_IN_MIN + Integer.parseInt(timearray[1]);
-            }
-            catch (NumberFormatException e) {
+            } catch (NumberFormatException e) {
                 return -1;
             }
         }
