@@ -1,0 +1,20 @@
+package edu.hw1;
+
+import java.util.regex.Matcher;
+public class Task1 {
+    private static final int SECS_IN_MIN = 60;
+
+    public static int Mins_to_secs(String timeinmins){
+        if (timeinmins.matches("[0-9]+:[0-5][0-9]")){
+            String[] timearray = timeinmins.split(":");
+            try {
+                return Integer.parseInt(timearray[0]) * SECS_IN_MIN + Integer.parseInt(timearray[1]);
+            }
+            catch (NumberFormatException e) {
+                return -1;
+            }
+
+        }
+        return -1;
+    };
+}
