@@ -6,13 +6,13 @@ public class Task2 {
     private Task2() {
     }
 
-    public static int countdigits(int num) {
-        if (num == 0) {
+    public static int countdigits(int number) {
+        if (number == 0) {
             return 1;
         }
         int count = 0;
-        while (num > 0) {
-            num /= RADIX;
+        while (number > 0) {
+            number /= RADIX;
             count += 1;
         }
         return count;
