@@ -11,7 +11,7 @@ public class Task2Test {
     void Test11() {
         int num = 11;
 
-        int ans = Task2.CountDigits(num);
+        int ans = Task2.countdigits(num);
 
         assertThat(ans)
             .isEqualTo(2);
@@ -21,7 +21,7 @@ public class Task2Test {
     void Test0() {
         int num = 0;
 
-        int ans = Task2.CountDigits(num);
+        int ans = Task2.countdigits(num);
 
         assertThat(ans)
             .isEqualTo(1);
@@ -31,7 +31,7 @@ public class Task2Test {
     void Test100() {
         int num = 100;
 
-        int ans = Task2.CountDigits(num);
+        int ans = Task2.countdigits(num);
 
         assertThat(ans)
             .isEqualTo(3);
@@ -41,7 +41,7 @@ public class Task2Test {
     void Test1234() {
         int num = 1234;
 
-        int ans = Task2.CountDigits(num);
+        int ans = Task2.countdigits(num);
 
         assertThat(ans)
             .isEqualTo(4);
@@ -51,7 +51,7 @@ public class Task2Test {
     void Testmax() {
         int num = Integer.MAX_VALUE;
 
-        int ans = Task2.CountDigits(num);
+        int ans = Task2.countdigits(num);
 
         assertThat(ans)
             .isEqualTo(10);
