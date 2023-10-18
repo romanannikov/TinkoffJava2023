@@ -24,13 +24,10 @@ public class Task5 {
                     finStr.append(numArray[i] - '0' + numArray[i + 1] - '0');
                 }
                 numArray = finStr.toString().toCharArray();
-            }
-            else {
+            } else {
                 return true;
             }
         }
         return false;
     }
-
-
 }
