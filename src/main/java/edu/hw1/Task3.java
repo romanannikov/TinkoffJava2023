@@ -13,7 +13,7 @@ public class Task3 {
         }
         if (array2.length == 0) {
             return false;
-        } 
+        }
         return (Arrays.stream(array1).min().getAsInt() > Arrays.stream(array2).min().getAsInt())
             && (Arrays.stream(array1).max().getAsInt() < Arrays.stream(array2).max().getAsInt());
     }
