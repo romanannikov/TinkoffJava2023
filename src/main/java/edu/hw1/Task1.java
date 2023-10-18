@@ -8,11 +8,11 @@ public class Task1 {
     private Task1() {
     }
 
-    public static int minstosecs(@NotNull String timeinmins) {
+    public static int minsToSecs(@NotNull String timeinmins) {
         if (timeinmins.matches("[0-9]+:[0-5][0-9]")) {
-            String[] timearray = timeinmins.split(":");
+            String[] timeArray = timeinmins.split(":");
             try {
-                return Integer.parseInt(timearray[0]) * SECS_IN_MIN + Integer.parseInt(timearray[1]);
+                return Integer.parseInt(timeArray[0]) * SECS_IN_MIN + Integer.parseInt(timeArray[1]);
             } catch (NumberFormatException e) {
                 return -1;
             }

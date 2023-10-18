@@ -4,8 +4,6 @@ import org.jetbrains.annotations.NotNull;
 
 public class Task4 {
 
-    private static final int SECS_IN_MIN = 60;
-
     private Task4() {
     }
 
