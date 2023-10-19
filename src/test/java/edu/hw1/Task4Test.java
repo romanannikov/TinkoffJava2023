@@ -8,7 +8,7 @@ public class Task4Test {
 
     @Test
     @DisplayName("14365")
-    void Test1() {
+    void test1() {
         String wrongstr = "214365";
 
         String ansstr = Task4.fixString(wrongstr);
@@ -18,7 +18,7 @@ public class Task4Test {
     }
     @Test
     @DisplayName("hTsii  s aimex dpus rtni.g")
-    void Test2() {
+    void test2() {
         String wrongstr = "hTsii  s aimex dpus rtni.g";
 
         String ansstr = Task4.fixString(wrongstr);
@@ -28,7 +28,7 @@ public class Task4Test {
     }
     @Test
     @DisplayName("badce")
-    void Test3() {
+    void test3() {
         String wrongstr = "badce";
 
         String ansstr = Task4.fixString(wrongstr);
@@ -38,7 +38,7 @@ public class Task4Test {
     }
     @Test
     @DisplayName("a")
-    void Test4() {
+    void test4() {
         String wrongstr = "a";
 
         String ansstr = Task4.fixString(wrongstr);
@@ -48,7 +48,7 @@ public class Task4Test {
     }
     @Test
     @DisplayName("empty")
-    void Test5() {
+    void test5() {
         String wrongstr = "";
 
         String ansstr = Task4.fixString(wrongstr);

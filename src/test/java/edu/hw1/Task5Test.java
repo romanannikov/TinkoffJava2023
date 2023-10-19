@@ -8,7 +8,7 @@ public class Task5Test {
 
     @ParameterizedTest(name = "{index}: {0} - {1}")
     @CsvSource({"112, false", "0, false", "11211230, true", "13001120, true", "23336014, true"})
-    void Test0(int num, boolean expIsPali) {
+    void test(int num, boolean expIsPali) {
 
         boolean isPal = Task5.isPalindromeDescendant(num);
 

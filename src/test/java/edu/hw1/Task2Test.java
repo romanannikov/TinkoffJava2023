@@ -8,7 +8,7 @@ public class Task2Test {
 
     @ParameterizedTest(name = "{index} - {1} digits in {0}")
     @CsvSource({"1, 1", "0, 1", "100, 3", "1234, 4", "-100, 3"})
-    void Test0(int num, int expCountDigits) {
+    void test(int num, int expCountDigits) {
 
         int countDigits = Task2.countdigits(num);
 
