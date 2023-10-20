@@ -14,7 +14,7 @@ public class Task8 {
             for (int x = 0; x < SIZE; x++) {
                 if (field[x][y] == 1) {
                     for (var move : POSSIBLE_MOVES) {
-                        if (x + move[0] >= 0 && x + move[0] < SIZE && y + move[1] >= 0 && y + move[1] < SIZE 
+                        if (x + move[0] >= 0 && x + move[0] < SIZE && y + move[1] >= 0 && y + move[1] < SIZE
                             && field[x + move[0]][y + move[1]] == 1) {
                             return false;
                         }
