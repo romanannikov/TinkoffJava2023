@@ -6,8 +6,7 @@ public class Task1 {
     private Task1() {
     }
 
-    double CONST = 4;
-    private static org.apache.logging.log4j.Logger LOGGER = LogManager.getLogger();
+    private static final org.apache.logging.log4j.Logger LOGGER = LogManager.getLogger();
 
     public static void main(String[] args) {
         var two = new Expr.Constant(2);
