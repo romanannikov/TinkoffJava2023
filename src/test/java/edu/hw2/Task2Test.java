@@ -26,4 +26,29 @@ public class Task2Test {
 
         assertThat(rect.area()).isEqualTo(200.0);
     }
+
+    @Test
+    @DisplayName("Rectangle")
+    void rectangleTest() {
+
+        Rectangle rect = new Rectangle();
+
+        rect.setHeight(20);
+        rect.setWidth(10);
+        double ans = rect.area();
+
+        assertEquals(ans, 200);
+    }
+
+    @Test
+    @DisplayName("Square")
+    void squareTest() {
+
+        Square square = new Square();
+
+        square.setWidth(20);
+        double ans = square.area();
+        
+        assertEquals(ans, 400);
+    }
 }
