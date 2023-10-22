@@ -48,7 +48,7 @@ public class Task2Test {
 
         square.setWidth(20);
         double ans = square.area();
-        
+
         assertEquals(ans, 400);
     }
 }
