@@ -2,10 +2,10 @@ package edu.hw2.Task3;
 
 public class DefaultConnectionManager implements ConnectionManager {
 
-    private double MANAGER_FAIL_PROP;
+    private double MANAGERFAILPROP;
 
     @Override
     public Connection getConnection() {
-        return Math.random() < MANAGER_FAIL_PROP ? new StableConnection() : new FaultyConnection();
+        return Math.random() < MANAGERFAILPROP ? new StableConnection() : new FaultyConnection();
     }
 }

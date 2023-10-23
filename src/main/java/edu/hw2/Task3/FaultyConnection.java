@@ -2,14 +2,14 @@ package edu.hw2.Task3;
 
 public class FaultyConnection implements Connection {
 
-    double CONNECNION_FAIL_PROP;
+    double CONNECNIONFAILPROP;
 
     public FaultyConnection() {
     }
 
     @Override
     public void execute(String command) {
-        if (Math.random() < CONNECNION_FAIL_PROP) {
+        if (Math.random() < CONNECNIONFAILPROP) {
             throw new ConnectionException();
         }
     }
