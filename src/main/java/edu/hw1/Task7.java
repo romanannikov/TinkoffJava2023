@@ -6,14 +6,15 @@ public class Task7 {
     }
 
     public static Integer rotateLeft(int num, int shift) {
+        int shiftLeft = shift;
         char[] numArray = Integer.toBinaryString(num).toCharArray();
-        if (shift < 0) {
-            shift = Math.abs(shift);
-            return rotateRight(num, shift);
+        if (shiftLeft < 0) {
+            int shiftRight = Math.abs(shiftLeft);
+            return rotateRight(num, shiftRight);
         }
         char tempChar;
-        shift = shift % numArray.length;
-        for (int i = 0; i < shift; i++) {
+        shiftLeft %= numArray.length;
+        for (int i = 0; i < shiftLeft; i++) {
             tempChar = numArray[0];
             for (int j = 0; j < numArray.length - 1; j++) {
                 numArray[j] = numArray[j + 1];
@@ -25,13 +26,14 @@ public class Task7 {
 
     public static Integer rotateRight(int num, int shift) {
         char[] numArray = Integer.toBinaryString(num).toCharArray();
-        if (shift < 0) {
-            shift = Math.abs(shift);
-            return rotateLeft(num, shift);
+        int shiftRight = shift;
+        if (shiftRight < 0) {
+            int shiftLeft = Math.abs(shiftRight);
+            return rotateLeft(num, shiftLeft);
         }
         char tempChar;
-        shift = shift % numArray.length;
-        for (int i = 0; i < shift; i++) {
+        shiftRight %= numArray.length;
+        for (int i = 0; i < shiftRight; i++) {
             tempChar = numArray[numArray.length - 1];
             for (int j = numArray.length - 1; j > 0; j--) {
                 numArray[j] = numArray[j - 1];

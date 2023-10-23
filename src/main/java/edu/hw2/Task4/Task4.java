@@ -4,6 +4,9 @@ import org.apache.logging.log4j.LogManager;
 
 public class Task4 {
 
+    private Task4() {
+    }
+
     private static final org.apache.logging.log4j.Logger LOGGER = LogManager.getLogger();
     private static final int NAMES_INDEX = 2;
 
