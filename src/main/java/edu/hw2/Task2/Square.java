@@ -1,10 +1,10 @@
 package edu.hw2.Task2;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
 
     @Override public void setWidth(int width) {
         super.setWidth(width);
-        if (this.height == 0){
+        if (this.height == 0) {
             super.setHeight(width);
         }
     }
@@ -12,7 +12,7 @@ public class Square extends Rectangle{
     @Override
     public void setHeight(int height) {
         super.setHeight(height);
-        if (this.width == 0){
+        if (this.width == 0) {
             super.setWidth(height);
         }
     }
