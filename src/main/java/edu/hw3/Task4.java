@@ -4,23 +4,23 @@ import java.util.TreeMap;
 
 public class Task4 {
 
-    private final static TreeMap<Integer, String> romanNum = new TreeMap<>();
+    private final static TreeMap<Integer, String> ROMAN_NUM = new TreeMap<>();
 
     static {
 
-        romanNum.put(1000, "M");
-        romanNum.put(900, "CM");
-        romanNum.put(500, "D");
-        romanNum.put(400, "CD");
-        romanNum.put(100, "C");
-        romanNum.put(90, "XC");
-        romanNum.put(50, "L");
-        romanNum.put(40, "XL");
-        romanNum.put(10, "X");
-        romanNum.put(9, "IX");
-        romanNum.put(5, "V");
-        romanNum.put(4, "IV");
-        romanNum.put(1, "I");
+        ROMAN_NUM.put(1000, "M");
+        ROMAN_NUM.put(900, "CM");
+        ROMAN_NUM.put(500, "D");
+        ROMAN_NUM.put(400, "CD");
+        ROMAN_NUM.put(100, "C");
+        ROMAN_NUM.put(90, "XC");
+        ROMAN_NUM.put(50, "L");
+        ROMAN_NUM.put(40, "XL");
+        ROMAN_NUM.put(10, "X");
+        ROMAN_NUM.put(9, "IX");
+        ROMAN_NUM.put(5, "V");
+        ROMAN_NUM.put(4, "IV");
+        ROMAN_NUM.put(1, "I");
 
     }
 
@@ -28,10 +28,10 @@ public class Task4 {
     }
 
     public static String convertToRoman(int num) {
-        int i =  romanNum.floorKey(num);
+        int i =  ROMAN_NUM.floorKey(num);
         if (num == i) {
-            return romanNum.get(num);
+            return ROMAN_NUM.get(num);
         }
-        return romanNum.get(i) + convertToRoman(num - i);
+        return ROMAN_NUM.get(i) + convertToRoman(num - i);
     }
 }
