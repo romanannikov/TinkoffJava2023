@@ -3,6 +3,7 @@ package edu.hw3;
 public class Task1 {
 
     private static final int SIZE = 'z' - 'a';
+
     private Task1() {
     }
 
