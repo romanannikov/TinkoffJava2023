@@ -6,7 +6,8 @@ public class Task2 {
     private Task2() {
     }
 
-    public static int countdigits(int num) {
+    public static int countdigits(int number) {
+        int num = number;
         if (num == 0) {
             return 1;
         }
