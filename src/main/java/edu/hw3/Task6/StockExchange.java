@@ -1,6 +1,5 @@
 package edu.hw3.Task6;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
