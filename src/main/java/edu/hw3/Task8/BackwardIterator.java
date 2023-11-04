@@ -12,6 +12,7 @@ public class BackwardIterator<T> implements Iterator<T> {
         this.aList = aList;
         this.curPos = aList.size() - 1;
     }
+
     @Override
     public boolean hasNext() {
         return curPos >= 0 && aList.get(curPos) != null;
