@@ -1,6 +1,7 @@
 package edu.hw3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Task2 {
 
@@ -12,7 +13,7 @@ public class Task2 {
     public static String[] clusterize(String brackets) {
         int counter = 0;
         StringBuilder bracketsStr = new StringBuilder();
-        ArrayList<String> bracketsList = new ArrayList<>();
+        List<String> bracketsList = new ArrayList<>();
         char[] bracketsArray = brackets.toCharArray();
         for (Character bracket : bracketsArray) {
             if (bracket.equals('(')) {

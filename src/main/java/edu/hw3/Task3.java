@@ -2,6 +2,7 @@ package edu.hw3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Task3 {
 
@@ -9,7 +10,7 @@ public class Task3 {
     }
 
     public static String freqDict(ArrayList<Object> wordsArray) {
-        HashMap<Object, Integer> dict = new HashMap<>();
+        Map<Object, Integer> dict = new HashMap<>();
         for (Object tempObj : wordsArray) {
             if (dict.containsKey(tempObj)) {
                 dict.put(tempObj, dict.get(tempObj) + 1);
